@@ -1,2 +1,2 @@
-Execute this in windows chrome
-we use any sysmbol to test not only TSLA
+Execute this in windows chrome,
+we can  use any sysmbol to test not only TSLA

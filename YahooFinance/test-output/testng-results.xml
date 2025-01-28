@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-28T17:43:01 IST" name="Suite" finished-at="2025-01-28T17:43:14 IST" duration-ms="13107">
+    <groups>
+    </groups>
+    <test started-at="2025-01-28T17:43:01 IST" name="Test" finished-at="2025-01-28T17:43:14 IST" duration-ms="13107">
+      <class name="testCases.Search_TC">
+        <test-method is-config="true" signature="Launch()[pri:0, instance:testCases.Search_TC@acdb094]" started-at="2025-01-28T17:43:01 IST" name="Launch" finished-at="2025-01-28T17:43:10 IST" duration-ms="8861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch -->
+        <test-method signature="search(java.lang.String)[pri:0, instance:testCases.Search_TC@acdb094]" started-at="2025-01-28T17:43:10 IST" name="search" description="Searching for stock symbol" data-provider="SerachData" finished-at="2025-01-28T17:43:11 IST" duration-ms="627" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TSLA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method signature="VerifyStockName(java.lang.String)[pri:1, instance:testCases.Search_TC@acdb094]" started-at="2025-01-28T17:43:11 IST" name="VerifyStockName" description="Verifying the name of the stock in suggestion" data-provider="CompanyName" finished-at="2025-01-28T17:43:11 IST" depends-on-methods="testCases.Search_TC.search" duration-ms="58" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tesla, Inc.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyStockName -->
+        <test-method signature="VerifyStockPrice()[pri:0, instance:testCases.Search_TC@acdb094]" started-at="2025-01-28T17:43:11 IST" name="VerifyStockPrice" description="Verify price of the stock is &gt;200 in stock details page" finished-at="2025-01-28T17:43:14 IST" depends-on-methods="testCases.Search_TC.VerifyStockName" duration-ms="3303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyStockPrice -->
+        <test-method is-config="true" signature="Quit()[pri:0, instance:testCases.Search_TC@acdb094]" started-at="2025-01-28T17:43:14 IST" name="Quit" finished-at="2025-01-28T17:43:14 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Quit -->
+      </class> <!-- testCases.Search_TC -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

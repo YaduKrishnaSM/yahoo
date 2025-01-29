@@ -18,7 +18,7 @@ public class Search_Page extends Commons{
     By SearchRslt = By.xpath("(//li[@data-test='srch-sym'])[1]");
     By StockName = By.xpath("(//div[contains(@class,'quoteCompanyName')])[1]");
     By StockClick = By.xpath("//li[@data-id='result-quotes-0']");
-    By StockPrice = By.xpath("//div[contains(@class,'container yf-1tejb6')]/div/span[@class='base up2   yf-ipw1h0']");
+    By StockPrice = By.xpath("(//span[contains(@data-testid, 'qsp')])[4]");
     By PreviouClose = By.xpath("(//span[@class='value yf-gn3zu3'])[1]");
     By Volume = By.xpath("(//span[@class='value yf-gn3zu3'])[7]");
     SoftAssert softassert=new SoftAssert();
